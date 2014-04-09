@@ -4,6 +4,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 @Path("andre")
@@ -15,6 +16,16 @@ public class LC {
 	@GET
 	public String ola(){
 		return "Olá Andre LC";
+	}
+	
+	@GET
+	@Path("teste")
+	public AndreDTO teste(@QueryParam("id") String id){
+		
+		AndreDTO a = new AndreDTO();
+		a.id = id;
+		
+		return a;
 	}
 
 }

@@ -17,13 +17,14 @@ public class LC {
 
 	// chamada do cliente - http://localhost:8888/LcWS/rest/andre
 	@GET
+	@Path("ola")
 	public String ola() {
 		return "Olá Andre LC";
 	}
 
 	@GET
-	@Path("teste")
-	public AndreDTO teste(@QueryParam("id") String id) {
+	@Path("get")
+	public AndreDTO get(@QueryParam("id") String id) {
 
 		AndreDTO a = new AndreDTO();
 		a.id = id;

@@ -9,4 +9,5 @@ public class AndreDTO {
 	
 	public String nome;
 	
+	public Long idade;
 }

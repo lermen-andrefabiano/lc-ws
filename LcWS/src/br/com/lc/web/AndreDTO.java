@@ -7,4 +7,6 @@ public class AndreDTO {
 	
 	public String id;
 	
+	public String nome;
+	
 }
